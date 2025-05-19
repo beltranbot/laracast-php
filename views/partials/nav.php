@@ -13,11 +13,11 @@
                         <a href="/"
                             class="<?= ($_SERVER["REQUEST_URI"] === "/") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
                             >Home</a>
-                        <a href="/about.php"
-                            class="<?= ($_SERVER["REQUEST_URI"] === "/about.php") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
+                        <a href="/about"
+                            class="<?= ($_SERVER["REQUEST_URI"] === "/about") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
                             >About</a>
-                        <a href="/contact.php"
-                            class="<?= ($_SERVER["REQUEST_URI"] === "/contact.php") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
+                        <a href="/contact"
+                            class="<?= ($_SERVER["REQUEST_URI"] === "/contact") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
                             >Contact</a>
                     </div>
                 </div>
@@ -103,9 +103,9 @@
                 class="<?= ($_SERVER["REQUEST_URI"] === "/") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
                 >Home</a>
             <a href="#"
-                class="<?= ($_SERVER["REQUEST_URI"] === "/about.php") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium">About</a>
+                class="<?= ($_SERVER["REQUEST_URI"] === "/about") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium">About</a>
             <a href="#"
-                class="<?= ($_SERVER["REQUEST_URI"] === "/contact.php") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                class="<?= ($_SERVER["REQUEST_URI"] === "/contact") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium">Contact</a>
         </div>
         <div class="border-t border-gray-700 pt-4 pb-3">
             <div class="flex items-center px-5">
