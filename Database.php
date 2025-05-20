@@ -12,19 +12,17 @@ class Database
         ]);
     }
 
-    public function query($query)
+    public function query($query, $params)
     {
         try {
 
             $statement = $this->pdo->prepare($query);
 
-            $statement->execute();
+            $statement->execute($params);
 
             $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
             return $posts;
-
-            // echo "Connected successfully";
         } catch (PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
         }
