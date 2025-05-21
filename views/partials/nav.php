@@ -13,6 +13,9 @@
                         <a href="/"
                             class="<?= ($_SERVER["REQUEST_URI"] === "/") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
                             >Home</a>
+                        <a href="/notes"
+                            class="<?= ($_SERVER["REQUEST_URI"] === "/notes") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
+                            >Notes</a>
                         <a href="/about"
                             class="<?= ($_SERVER["REQUEST_URI"] === "/about") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" ?> block rounded-md px-3 py-2 text-base font-medium"
                             >About</a>
