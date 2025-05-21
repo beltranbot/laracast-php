@@ -4,9 +4,7 @@ class Validator
 {
     public static function string($value, $min = 1, $max = INF)
     {
-        $value = strlen(trim($value)) === 0;
-
-        return strlen($value) > $min && strlen($value) < $max;
+        return strlen($value) >= $min && strlen($value) <= $max;
     }
 
     public static function email($value)

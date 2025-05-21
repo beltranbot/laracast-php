@@ -1,6 +1,6 @@
 <?php
 
-$config = require("config.php");
+$config = require base_path("config.php");
 
 $db = new Database($config["database"], "laracast", "laracast");
 
@@ -14,10 +14,13 @@ $note = $db->query("select * from notes where id = :id", [
 
 if (!$note) {
     abort();
-} 
+}
 
 $currentUserId = 1;
 
 authorize($note["user_id"] === $currentUserId);
 
-require "views/notes/show.view.php";
+view("notes/show.view.php", [
+    "heading" => $heading,
+    "note" => $note
+]);
