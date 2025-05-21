@@ -5,7 +5,7 @@ class Database
     private $pdo;
     private $statement;
 
-    public function __construct($config, $username, $password)
+    public function __construct($config, $username = "laracast", $password = "laracast")
     {
         $dsn = "mysql:" . http_build_query($config, "", ";");
         $this->pdo = new PDO($dsn, $username, $password, [
