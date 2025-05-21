@@ -2,7 +2,6 @@
 
 $routes = require base_path("routes.php");
 
-
 function abort($code = 404): void
 {
     http_response_code($code);

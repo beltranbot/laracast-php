@@ -1,5 +1,9 @@
 <?php
 
+namespace Controllers\Notes;
+
+use Core\Database;
+
 $config = require base_path("config.php");
 
 $db = new Database($config["database"], "laracast", "laracast");
