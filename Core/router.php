@@ -6,7 +6,7 @@ function abort($code = 404): void
 {
     http_response_code($code);
 
-    view("views/{$code}.php");
+    view("{$code}.php");
 
     die();
 }
