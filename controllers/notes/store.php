@@ -20,7 +20,10 @@ if (!Validator::string($_POST["body"], max: 1000)) {
 }
 
 if (!$errors) {
-    // do something
+    return view("notes/create.view.php", [
+        "heading" => $heading,
+        "errors" => $errors
+    ]);
 }
 
 $db->query("insert into notes(body, user_id) values (:body, :user_id)", [
